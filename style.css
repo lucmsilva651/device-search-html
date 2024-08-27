@@ -1,0 +1,97 @@
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #0f0f0f;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  zoom: 120%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  margin: auto;
+  background: #212121;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+input {
+  font-family: "Inter", sans-serif;
+  padding: 10px;
+  margin: 0 0 20px -10px;
+  background-color: #4e4e4e;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+button {
+  font-family: "Inter", sans-serif;
+  padding: 10px 20px;
+  transition: 100ms;
+  border-radius: 4px;
+  border: none;
+  background-color: #4e4e4e;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #6e6e6e;
+  transition: 100ms;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#result {
+  font-size: smaller;
+}
+
+.header {
+  color: #bababa;
+  font-size: 12px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.tabs {
+  overflow: hidden;
+  border: none;
+  outline: none;
+  width: fit-content;
+}
+
+.tablinks {
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.tabcontent {
+  display: none;
+  padding: 20px;
+  border-top: none;
+}
+
+.tabcontent input {
+  width: 100%;
+}
+
+.footer {
+  font-size: 12px;
+}

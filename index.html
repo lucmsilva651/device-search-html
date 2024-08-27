@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lucmsilva's Website | Device search</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Advanced Device Search</h1>
+    <p class="header">Website made by <a href="https://github.com/lucmsilva651" target="_blank" rel="noopener noreferrer">Lucas Gabriel (lucmsilva)</a></p>
+    <p class="header"><a class="link-small" href="https://github.com/lucmsilva651/device-search-html" target="_blank" rel="noopener noreferrer">Source code on GitHub</a></p>
+    <div class="tabs">
+      <button class="tablinks" onclick="openTab(event, 'byName')">Name</button>
+      <button class="tablinks" onclick="openTab(event, 'byCodename')">Codename</button>
+      <button class="tablinks" onclick="openTab(event, 'byModel')">Model</button>
+    </div>
+
+    <div id="byCodename" class="tabcontent">
+      <input type="text" autocomplete="off" id="codenameInput" placeholder="Enter device codename">
+      <button onclick="searchDevice()">Search by device codename</button>
+    </div>
+
+    <div id="byModel" class="tabcontent">
+      <input type="text" autocomplete="off" id="modelInput" placeholder="Enter device model">
+      <button onclick="searchByModel()">Search by device model</button>
+    </div>
+
+    <div id="byName" class="tabcontent">
+      <input type="text" autocomplete="off" id="nameInput" placeholder="Enter device name">
+      <button onclick="searchByName()">Search by device name</button>
+    </div>
+    
+    <div id="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
