@@ -59,6 +59,10 @@ a {
   color: inherit;
 }
 
+a:hover {
+  color: white;
+}
+
 #result {
   font-size: smaller;
 }
@@ -75,6 +79,22 @@ a {
   border: none;
   outline: none;
   width: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+@media (max-width: 440px) {
+  .tabs {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .tablinks {
+    width: 100%;
+    margin: 2px 0;
+  }
 }
 
 .tablinks {
